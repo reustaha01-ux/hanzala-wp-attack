@@ -1,0 +1,22 @@
+[app]
+title = Hanzala WP Attack
+package.name = hanzala
+package.domain = com.hanzala
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas,mp3,m4a,wav
+version = 1.0.0
+requirements = python3,kivy,pysocks,openssl,requests,urllib3,chardet,idna
+orientation = portrait
+fullscreen = 0
+icon.filename = %(source.dir)s/icon.png
+android.permissions = INTERNET,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,WAKE_LOCK,FOREGROUND_SERVICE,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE
+android.api = 33
+android.minapi = 21
+android.ndk = 25b
+android.archs = arm64-v8a, armeabi-v7a
+android.allow_backup = False
+android.accept_sdk_license = True
+android.release_artifact = apk
+android.debug_artifact = apk
+p4a.branch = master
+p4a.bootstrap = sdl2
